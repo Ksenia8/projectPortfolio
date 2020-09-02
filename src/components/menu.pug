@@ -1,0 +1,8 @@
+nav.menu
+    ul.menu__lust
+    - var menu = [{name: 'Главная', link: '#'},{name: 'Обо мне', link: '#'},{name: 'Навыки', link: '#'},{name: 'Работы', link: '#'},{name: 'Отзывы', link: '#'},{name: 'Связаться', link: '#'}]
+
+    each item in menu
+        li.menu__item
+            a(href=item.link).menu__link #{item.name}
+
